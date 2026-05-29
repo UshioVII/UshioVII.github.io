@@ -1,0 +1,11 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Herramientas / docs internas (no se publican)
+.claude/
+CLAUDE.md
+INSTRUCCIONES.md
+
+# Duplicado: la landing AK47 ya vive en ak47/index.html
+Pagina de ak47store/

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diego Raul Montes — Fullstack Developer & AI Builder. Portfolio profesional.">
+  <title>Diego Raul Montes — Dev Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="matrix-canvas"></canvas>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">DRM<span>_dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#tech">Stack</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="admin.html" class="nav-admin">[ ADMIN ]</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-content">
+    <p class="hero-prefix">// portfolio.init() — 2026</p>
+
+    <pre class="hero-ascii">
+██████╗ ██╗███████╗ ██████╗  ██████╗     ███╗   ███╗ ██████╗ ███╗   ██╗████████╗███████╗███████╗
+██╔══██╗██║██╔════╝██╔════╝ ██╔═══██╗    ████╗ ████║██╔═══██╗████╗  ██║╚══██╔══╝██╔════╝██╔════╝
+██║  ██║██║█████╗  ██║  ███╗██║   ██║    ██╔████╔██║██║   ██║██╔██╗ ██║   ██║   █████╗  ███████╗
+██║  ██║██║██╔══╝  ██║   ██║██║   ██║    ██║╚██╔╝██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ╚════██║
+██████╔╝██║███████╗╚██████╔╝╚██████╔╝    ██║ ╚═╝ ██║╚██████╔╝██║ ╚████║   ██║   ███████╗███████║
+╚═════╝ ╚═╝╚══════╝ ╚═════╝  ╚═════╝    ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚══════╝</pre>
+
+    <h1 class="hero-title">
+      <span id="typed-text"></span><span class="typed-cursor">|</span>
+    </h1>
+    <p class="hero-subtitle">Plaza Huincul, Neuquén &nbsp;·&nbsp; <span>Automatización con IA + Fullstack Dev</span> &nbsp;·&nbsp; 23 años</p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">Ver proyectos &rarr;</a>
+      <a href="#contact" class="btn btn-secondary">Hablemos</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Años coding</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2022</span>
+        <span class="stat-label">Inicio intensivo</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">FS</span>
+        <span class="stat-label">Full Stack</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll</div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">// 01.about_me</p>
+      <h2 class="section-title">Sobre <span>mí</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal reveal-delay-1">
+        <p>
+          Soy <strong>Diego Raul Montes</strong>, programador Full Stack Web de <em>Plaza Huincul, Neuquén</em>.
+          Comencé a estudiar programación de forma intensiva en 2022 y me certifiqué como
+          <strong>Programador Full Stack Web</strong> en De FORMAR y Digital House.
+        </p>
+        <p>
+          Soy atento y enérgico, siempre dispuesto a ayudar a resolver errores y problemas.
+          Disfruto debatir ideas de manera constructiva y trabajar en equipo. Durante mi formación
+          desarrollé una <strong>plataforma de e-commerce de claves de videojuegos</strong> aplicando
+          metodologías ágiles como <em>SCRUM</em>.
+        </p>
+        <p>
+          Actualmente sigo formándome de manera continua, investigando nuevas tecnologías
+          y expandiendo mis conocimientos para seguir creciendo como desarrollador.
+        </p>
+      </div>
+
+      <div class="terminal-window reveal reveal-delay-2">
+        <div class="terminal-bar">
+          <div class="tdot r"></div>
+          <div class="tdot y"></div>
+          <div class="tdot g"></div>
+          <span class="terminal-title">bash — ~/diego</span>
+        </div>
+        <div class="terminal-body">
+          <span class="tl"><span class="p">❯</span> <span class="c">cat info.json</span></span>
+          <span class="tl o">{</span>
+          <span class="tl o">&nbsp;&nbsp;"nombre": <span class="v">"Diego Raul Montes"</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;"rol": <span class="v">"Fullstack Developer"</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;"ubicacion": <span class="v">"Plaza Huincul, Neuquén"</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;"edad": <span class="v">23</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;"formacion": <span class="v">"De FORMAR + Digital House"</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;"especialidades": [</span>
+          <span class="tl o">&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">"Fullstack Web"</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">"React + Node.js"</span>,</span>
+          <span class="tl o">&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">"AI Tools"</span></span>
+          <span class="tl o">&nbsp;&nbsp;],</span>
+          <span class="tl o">&nbsp;&nbsp;"disponible": <span style="color:var(--green)">true</span></span>
+          <span class="tl o">}</span>
+          <span class="tl"><span class="p">❯</span> <span class="typed-cursor">|</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TECH ── -->
+<section id="tech">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">// 02.tech_stack</p>
+      <h2 class="section-title">Tecnologías que <span>uso</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="tech-categories">
+      <div class="tech-category reveal reveal-delay-1">
+        <h3>Frontend</h3>
+        <div class="tech-grid">
+          <span class="tech-badge">◈ HTML</span>
+          <span class="tech-badge">◈ CSS</span>
+          <span class="tech-badge">◈ JavaScript</span>
+          <span class="tech-badge">◈ TypeScript</span>
+          <span class="tech-badge">◈ React</span>
+          <span class="tech-badge">◈ Tailwind CSS</span>
+          <span class="tech-badge">◈ Vite</span>
+        </div>
+      </div>
+
+      <div class="tech-category reveal reveal-delay-2">
+        <h3>Backend</h3>
+        <div class="tech-grid">
+          <span class="tech-badge">⟨/⟩ Node.js</span>
+          <span class="tech-badge">⟨/⟩ Express</span>
+          <span class="tech-badge">⟨/⟩ Java</span>
+          <span class="tech-badge">⟨/⟩ REST APIs</span>
+        </div>
+      </div>
+
+      <div class="tech-category reveal reveal-delay-3">
+        <h3>Bases de datos</h3>
+        <div class="tech-grid">
+          <span class="tech-badge">▤ MySQL</span>
+          <span class="tech-badge">▤ MongoDB</span>
+        </div>
+      </div>
+
+      <div class="tech-category reveal reveal-delay-4">
+        <h3>AI &amp; Herramientas</h3>
+        <div class="tech-grid">
+          <span class="tech-badge">◉ IA Generativa</span>
+          <span class="tech-badge">◉ Automatizaciones</span>
+          <span class="tech-badge">▸ Git</span>
+          <span class="tech-badge">▸ GitHub</span>
+          <span class="tech-badge">▸ VS Code</span>
+          <span class="tech-badge">▸ Postman</span>
+          <span class="tech-badge">▸ MySQL Workbench</span>
+          <span class="tech-badge">▸ IntelliJ IDEA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">// 03.projects</p>
+      <h2 class="section-title">Mis <span>proyectos</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="cliente">Clientes</button>
+      <button class="filter-btn" data-filter="ia">AI / ML</button>
+    </div>
+
+    <div id="projects-grid" class="projects-grid"></div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">// 04.experience</p>
+      <h2 class="section-title">Experiencia &amp; <span>Estudios</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 — Presente</div>
+        <div class="timeline-title">Ingeniería en Sistemas de Información</div>
+        <div class="timeline-subtitle">Universidad Tecnológica Nacional (UTN)</div>
+        <div class="timeline-desc">
+          Formación universitaria en curso. Materias aprobadas:
+        </div>
+        <div class="utn-subjects">
+          <div class="utn-group">
+            <span class="utn-group-label">💻 Desarrollo de Software</span>
+            <div class="utn-tags">
+              <span class="utn-tag">Programación I · Python</span>
+              <span class="utn-tag">Programación II · POO</span>
+              <span class="utn-tag">Programación III · Arquitectura avanzada</span>
+            </div>
+          </div>
+          <div class="utn-group">
+            <span class="utn-group-label">🗄️ Infraestructura y Datos</span>
+            <div class="utn-tags">
+              <span class="utn-tag">Bases de Datos I · SQL / DER</span>
+              <span class="utn-tag">Bases de Datos II · Stored Procedures / NoSQL</span>
+              <span class="utn-tag">Arquitectura y Sistemas Operativos</span>
+            </div>
+          </div>
+          <div class="utn-group">
+            <span class="utn-group-label">📋 Metodologías</span>
+            <div class="utn-tags">
+              <span class="utn-tag">Metodología de Sistemas · SCRUM / Kanban</span>
+              <span class="utn-tag">Probabilidad y Estadística</span>
+              <span class="utn-tag">Matemática Aplicada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-title">Curso de React</div>
+        <div class="timeline-subtitle">De FORMAR</div>
+        <div class="timeline-desc">
+          Desarrollo de habilidades en React trabajando con Tailwind CSS, Vite y MongoDB.
+          Conocimientos prácticos adquiridos en un curso intensivo de 3 semanas.
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-date">2022 — 2023</div>
+        <div class="timeline-title">Programador Full Stack Web</div>
+        <div class="timeline-subtitle">De FORMAR &amp; Digital House</div>
+        <div class="timeline-desc">
+          Desarrollo en equipo de una plataforma de e-commerce de claves de videojuegos.
+          Metodologías ágiles con SCRUM. Stack: JS, React, HTML, CSS, Node.js, Express y MySQL.
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-date">2022</div>
+        <div class="timeline-title">Inicio en programación</div>
+        <div class="timeline-subtitle">Autodidacta</div>
+        <div class="timeline-desc">
+          Comienzo del aprendizaje intensivo en desarrollo web e investigación de las primeras
+          herramientas de IA generativa desde su lanzamiento.
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-date">2014 — 2021</div>
+        <div class="timeline-title">Nivel Secundario</div>
+        <div class="timeline-subtitle">C.E.P.E.M N°58</div>
+        <div class="timeline-desc">
+          Educación secundaria completa.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">// 05.contact</p>
+      <h2 class="section-title">Hablemos de tu <span>proyecto</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="contact-text">
+          ¿Tenés un proyecto en mente? ¿Necesitás una web para tu negocio y gestionarlo
+          de manera más cómoda? Estoy disponible para proyectos freelance
+          y colaboraciones desde Plaza Huincul, Neuquén.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://github.com/UshioVII" target="_blank" class="contact-link">
+            ⟨/⟩ &nbsp; github.com/UshioVII
+          </a>
+          <a href="https://ar.linkedin.com/in/diego-raul-montes" target="_blank" class="contact-link">
+            ◈ &nbsp; linkedin.com/in/diego-raul-montes
+          </a>
+          <a href="mailto:diegomontesraul@gmail.com" class="contact-link">
+            ✉ &nbsp; diegomontesraul@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form reveal reveal-delay-2">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea name="mensaje" placeholder="Contame tu proyecto..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">
+          Enviar mensaje &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>
+    <span>Diego Raul Montes</span> &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp;
+    Plaza Huincul, Neuquén &nbsp;·&nbsp; <span>2026</span>
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
