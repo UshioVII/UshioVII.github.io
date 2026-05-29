@@ -6,7 +6,7 @@ Portfolio personal de **Diego Raul Montes**, especialista en automatización de 
 
 ## Secciones
 - **Sobre mí** — formación y perfil.
-- **Stack** — automatización & IA (n8n, Claude, prompt engineering, APIs/webhooks), bases de datos (MySQL, MongoDB), web (HTML, CSS, Node.js) y herramientas (Git, GitHub, VS Code).
+- **Stack** — automatización & IA (n8n, Claude, prompt engineering, APIs/webhooks), backend (Java, Spring Boot, Node.js), frontend (HTML, CSS, TypeScript, Vite), bases de datos (MySQL, MongoDB) y herramientas (Git, GitHub, VS Code).
 - **Proyectos** — incluye automatización con IA, la landing [AK47 Store](https://ushiovii.github.io/ak47/) y un e-commerce.
 - **Experiencia & estudios** — UTN (Tecnicatura Universitaria en Programación), De FORMAR, Digital House.
 - **Contacto** — formulario + redes.
