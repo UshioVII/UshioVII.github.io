@@ -1491,5 +1491,40 @@
     }
   }, { passive: true });
 </script>
+
+<!-- ── Botón flotante de Instagram ── -->
+<a href="https://instagram.com/ak_47store" target="_blank" rel="noopener noreferrer"
+   aria-label="Seguinos y comprá por Instagram @ak_47store" class="ig-float">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+  <span>Comprá por Instagram</span>
+</a>
+<style>
+  .ig-float{
+    position:fixed; right:20px; bottom:20px; z-index:9999;
+    display:inline-flex; align-items:center; gap:10px;
+    padding:13px 20px; border-radius:50px;
+    background:#C8FF00; color:#000;
+    font-family:'Space Mono',monospace; font-size:14px; font-weight:700;
+    text-decoration:none; letter-spacing:.3px;
+    box-shadow:0 6px 24px rgba(200,255,0,.35);
+    transition:transform .2s ease, box-shadow .2s ease;
+    animation:igPulse 2.6s ease-in-out infinite;
+  }
+  .ig-float:hover{ transform:translateY(-3px); box-shadow:0 10px 30px rgba(200,255,0,.55); }
+  .ig-float svg{ flex-shrink:0; }
+  @keyframes igPulse{
+    0%,100%{ box-shadow:0 6px 24px rgba(200,255,0,.35); }
+    50%{ box-shadow:0 6px 30px rgba(200,255,0,.65); }
+  }
+  @media (max-width:600px){
+    .ig-float span{ display:none; }
+    .ig-float{ padding:15px; }
+  }
+</style>
 </body>
 </html>
