@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Typewriter
   var typed = document.getElementById('typed-text');
-  if (typed) typewriter(typed, ['Automatización con IA', 'Workflows con n8n + Claude', 'Fullstack Developer', 'Webs a medida']);
+  if (typed) typewriter(typed, ['Automatización con IA', 'Workflows con n8n + Claude', 'IA aplicada a negocios', 'Webs a medida']);
 
   // Effects
   initCursor();

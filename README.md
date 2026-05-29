@@ -1,14 +1,14 @@
 # Diego Raul Montes — Portfolio
 
-Portfolio personal de **Diego Raul Montes**, desarrollador Fullstack y especialista en automatización de negocios con IA (n8n + Claude). Plaza Huincul, Neuquén 🇦🇷
+Portfolio personal de **Diego Raul Montes**, especialista en automatización de negocios con IA (n8n + Claude). Plaza Huincul, Neuquén 🇦🇷
 
 🔗 **En vivo:** https://ushiovii.github.io
 
 ## Secciones
 - **Sobre mí** — formación y perfil.
-- **Stack** — tecnologías (HTML, CSS, JS, TypeScript, React, Node.js, Java, MySQL, MongoDB, IA + automatizaciones).
+- **Stack** — automatización & IA (n8n, Claude, prompt engineering, APIs/webhooks), bases de datos (MySQL, MongoDB), web (HTML, CSS, Node.js) y herramientas (Git, GitHub, VS Code).
 - **Proyectos** — incluye automatización con IA, la landing [AK47 Store](https://ushiovii.github.io/ak47/) y un e-commerce.
-- **Experiencia & estudios** — UTN (Ing. en Sistemas), De FORMAR, Digital House.
+- **Experiencia & estudios** — UTN (Tecnicatura Universitaria en Programación), De FORMAR, Digital House.
 - **Contacto** — formulario + redes.
 
 ## Tecnología del sitio
