@@ -353,6 +353,16 @@ var DEFAULT_PROJECTS = [
     category: 'ia', badge: 'ai', url: '', github: '', placeholder: false
   },
   {
+    id: 4,
+    title: 'Food Store — App Full-Stack (TPI)',
+    description: 'E-commerce de comida desarrollado como Trabajo Práctico Integrador en equipo (Tecnicatura UTN). Mi parte: backend en Java + Spring Boot (API REST) y frontend en TypeScript + Vite.',
+    tech: ['Java', 'Spring Boot', 'TypeScript', 'Vite'],
+    category: 'web', badge: 'featured', url: '',
+    github: 'https://github.com/UshioVII/food-store-backend-api', githubLabel: 'Backend',
+    github2: 'https://github.com/UshioVII/food-store-frontend', github2Label: 'Frontend',
+    placeholder: false
+  },
+  {
     id: 2,
     title: 'AK47 Store — Landing Streetwear',
     description: 'Landing page para tienda de gorras y streetwear. Diseño urbano con animaciones, galería de productos y conexión directa a Instagram y TikTok para consultas y ventas.',
@@ -398,7 +408,8 @@ function renderProjects(filter) {
   list.forEach(function (p, i) {
     var b = badgeMap[p.badge] || badgeMap.featured;
     var delay = (i % 4) + 1;
-    var githubLink = p.github ? '<a href="' + p.github + '" target="_blank" class="project-link">⟨/⟩ GitHub</a>' : '';
+    var githubLink = p.github ? '<a href="' + p.github + '" target="_blank" class="project-link">⟨/⟩ ' + (p.githubLabel || 'GitHub') + '</a>' : '';
+    var githubLink2 = p.github2 ? '<a href="' + p.github2 + '" target="_blank" class="project-link">⟨/⟩ ' + (p.github2Label || 'GitHub') + '</a>' : '';
     var liveLink   = p.url    ? '<a href="' + p.url    + '" target="_blank" class="project-link live">↗ Ver live</a>' : '';
     var noLinks    = (!p.github && !p.url) ? '<span class="project-link" style="color:var(--border)">//&nbsp;links&nbsp;pendientes</span>' : '';
     var phNote     = p.placeholder ? '<p class="placeholder-note">// placeholder — cargá el real desde el panel admin</p>' : '';
@@ -411,7 +422,7 @@ function renderProjects(filter) {
       '<p class="project-desc">' + p.description + '</p>' +
       phNote +
       '<div class="project-tech">' + p.tech.map(function (t) { return '<span class="tech-tag">' + t + '</span>'; }).join('') + '</div>' +
-      '<div class="project-links">' + githubLink + liveLink + noLinks + '</div>';
+      '<div class="project-links">' + githubLink + githubLink2 + liveLink + noLinks + '</div>';
     grid.appendChild(card);
   });
 }
