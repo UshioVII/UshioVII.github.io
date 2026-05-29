@@ -434,7 +434,7 @@ function initFilters() {
 //   3. Pegalo abajo en FORMSPREE_ENDPOINT.
 // Si lo dejás vacío, el formulario abre el mail del visitante con el mensaje ya cargado (fallback).
 var FORMSPREE_ENDPOINT = ''; // ← pegá acá tu endpoint de Formspree
-var CONTACT_EMAIL = 'diegomontes2013@gmail.com';
+var CONTACT_EMAIL = 'diegomontesraul@gmail.com';
 
 function initForm() {
   var form = document.getElementById('contact-form');
